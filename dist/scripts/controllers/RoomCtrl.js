@@ -9,7 +9,7 @@
 
     this.addRoom = function() {
       var modalInstance = $uibModal.open({
-        templateUrl: '/templates/modal.html',
+        templateUrl: '/templates/modal1.html',
         controller: 'ModalCtrl',
         controllerAs: 'modal',
         resolve: {
@@ -21,7 +21,7 @@
       modalInstance.result.then(function (selectedItem) {
         // $ctrl.selected = selectedItem;
       }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
+        console.log('Modal dismissed at: ' + new Date());
       });
     };
 

@@ -17,8 +17,10 @@
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
   <!-- AngularJS -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-cookies.js"></script>
   <!-- UI Router -->
   <script src="https://cdn.rawgit.com/angular-ui/ui-router/0.2.18/release/angular-ui-router.js"></script>
   <!--Bootstrap Modal -->
@@ -27,7 +29,7 @@
   <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
   <!-- AngularFire -->
   <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
-<script>
+  <script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBIl7_h5C2pegNN-oh7PvOqumpavEbabLQ",
@@ -38,7 +40,9 @@
   };
   firebase.initializeApp(config);
   </script>
+
   <script src="/scripts/app.js"></script>
+  <script src="/scripts/services/BlocChatCookies.js"></script>
   <script src="/scripts/factories/room.js"></script>
   <script src="/scripts/factories/message.js"></script>
   <script src="/scripts/controllers/ModalCtrl.js"></script>
