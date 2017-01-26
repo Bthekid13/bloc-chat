@@ -15,7 +15,7 @@
 
     this.createUsername = function() {
       $cookies.blocChatCurrentUser = this.newUsername;
-      $uibModalInstance.close();
+      $uibModalInstance.close($cookies.blocChatCurrentUser);
     };
   }
 
