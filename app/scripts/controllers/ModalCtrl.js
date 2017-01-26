@@ -2,6 +2,7 @@
 
   function ModalCtrl(Room, $cookies, $uibModalInstance) {
     this.rooms = Room.all;
+
     this.create = function() {
       this.rooms.$add({
         name: this.newRoomName

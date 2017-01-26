@@ -14,8 +14,15 @@
       </div>
     </div>
 
-    <div class="chat-message-container" ng-show="RoomCtrl.activeRoom">
-      {{ RoomCtrl.currentUser }}: <input ng-model="newMessage" />
+     <!-- <div class="chat-message-container" ng-show="RoomCtrl.activeRoom">
+      {{ RoomCtrl.currentUser }}: <input ng-model="RoomCtrl.newMessage" />
       <button class="btn btn-primary" type="button" ng-click="RoomCtrl.sendMessage(RoomCtrl.activeRoom)">Send Message</button>
+    </div> -->
+
+
+    <div class="new-msg-box" ng-show="RoomCtrl.activeRoom">
+      <form ng-submit="RoomCtrl.sendMessage(RoomCtrl.activeRoom)">
+        <textarea placeholder="Begin Chatting Here..." class="new-msg-input" ng-model="RoomCtrl.newMessage"></textarea>
+        <button type="submit" class="new-msg-button btn btn-primary">Submit</button>
+      </form>
     </div>
-  </div>

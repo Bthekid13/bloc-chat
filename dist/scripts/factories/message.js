@@ -4,6 +4,7 @@
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
 
+
     return {
       getByRoomId: function (roomId) {
 
@@ -11,9 +12,10 @@
       },
       send: function (newMessage, roomId) {
         messages.$add({
-          username: $cookies.get('blocChatCurrentUser'),
+          username: $cookies.blocChatCurrentUser,
           content: newMessage,
           roomId: roomId
+
         });
       }
     };

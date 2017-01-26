@@ -34,13 +34,9 @@
 
     this.sendMessage = function(room) {
       Message.send(this.newMessage, room.$id);
+      console.log(this.newMessage, room.$id);
     };
   }
-
-
-
-
-
 
   angular
   .module('blocChat')
